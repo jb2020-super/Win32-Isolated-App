@@ -1,0 +1,37 @@
+// Dependency.idl : IDL source for Dependency
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Dependency.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(4d76debb-7124-42fb-9858-004235ffa61e),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IATLSimpleObject : IDispatch
+{
+	HRESULT Print();
+};
+[
+	uuid(be0151fd-b587-46d2-8df0-cb3a8e8c87c5),
+	version(1.0),
+]
+library DependencyLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(623d3c49-7ef6-4c2f-9e31-e8b87aa1ae91)
+	]
+	coclass ATLSimpleObject
+	{
+		[default] interface IATLSimpleObject;
+	};
+};
+
+import "shobjidl.idl";

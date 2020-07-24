@@ -1,0 +1,13 @@
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">  
+  <dependency >
+    <dependentAssembly>
+      <assemblyIdentity
+          type="x64"
+          name="Depend"
+          version="1.0.0.0"
+          processorArchitecture="amd64"
+        />
+    </dependentAssembly>
+  </dependency>
+
+</assembly>
